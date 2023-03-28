@@ -36,4 +36,9 @@ public class Player : MonoBehaviour
             this.health = 100;
         }
     }
+
+    public string GetHealth()
+    {
+        return health.ToString();
+    }
 }
