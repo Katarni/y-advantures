@@ -7,11 +7,6 @@ public class N23SceneChanger : MonoBehaviour
 {
     private string sceneName = "FirstScene";
 
-    void Start()
-    {
-
-    }
-
     // Update is called once per frame
     void Update()
     {

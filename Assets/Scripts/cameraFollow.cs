@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class cameraFollow : MonoBehaviour
 {
-    public float Speed;
-    public GameObject Player;
-    public GameObject Camera;
+    private float Speed;
+    private GameObject Player;
+    private GameObject Camera;
 
     void Awake()
     {
