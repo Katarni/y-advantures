@@ -3,21 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class N12SceneChange : MonoBehaviour
+public class ReadRules : MonoBehaviour
 {
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            SceneManager.LoadScene("StoryScene");
-        }
         if (Input.GetKeyDown(KeyCode.H))
         {
             SceneManager.LoadScene("RuleScene");
         }
-    }
-    void Exit()
-    {
-        Application.Quit();
     }
 }
