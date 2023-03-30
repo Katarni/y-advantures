@@ -18,6 +18,8 @@ public class Enemy : MonoBehaviour
     public Transform attackPosition;
     public LayerMask playerLayer;
 
+    public GameObject dropIfDie;
+
     void Start()
     {
         Player = GameObject.FindGameObjectWithTag("Player");
@@ -29,6 +31,11 @@ public class Enemy : MonoBehaviour
     {
         if (health <= 0)
         {
+            if (dropIfDie != null)
+            {
+                Vector2 position = new Vector2(transform.position.x, transform.position.y);
+                Instantiate(dropIfDie, position, Quaternion.identity);
+            }
             Destroy(gameObject);
         }
 

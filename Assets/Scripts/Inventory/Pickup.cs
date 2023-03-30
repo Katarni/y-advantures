@@ -6,10 +6,12 @@ public class Pickup : MonoBehaviour
 {
     private Inventory inventory;
     public GameObject slot;
+    private Player player;
 
     private void Start()
     {
         inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
+        player = FindObjectOfType<Player>();
     }
 
     private void OnTriggerEnter2D (Collider2D other)
@@ -20,6 +22,10 @@ public class Pickup : MonoBehaviour
             {
                 if (!inventory.full_slots[i])
                 {
+                    if (gameObject.CompareTag("Wand"))
+                    {
+                        player.wand_unlocked = true;
+                    }
                     inventory.full_slots[i] = true;
                     Instantiate(slot, inventory.slots[i].transform);
                     Destroy(gameObject);

@@ -9,6 +9,8 @@ public class Player : MonoBehaviour
     private float health = 100f;
     Rigidbody2D rb;
 
+    public bool wand_unlocked = false;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();

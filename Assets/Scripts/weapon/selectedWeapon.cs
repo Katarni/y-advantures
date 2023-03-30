@@ -5,6 +5,12 @@ using UnityEngine;
 public class selectedWeapon : MonoBehaviour
 {
     public GameObject[] weapons = new GameObject[2];
+    private Player player;
+
+    void Start()
+    {
+        player = FindObjectOfType<Player>();
+    }
 
     private void Update()
     {
@@ -14,17 +20,38 @@ public class selectedWeapon : MonoBehaviour
             {
                 if (weapons[i].activeInHierarchy)
                 {
-                    weapons[i].SetActive(false);
-
-                    if (i != weapons.Length - 1)
+                    if (weapons[i].CompareTag("Sword") && player.wand_unlocked)
                     {
-                        weapons[i + 1].SetActive(true);
+                        weapons[i].SetActive(false);
+
+                        if (i != weapons.Length - 1)
+                        {
+                            weapons[i + 1].SetActive(true);
+                        }
+                        else
+                        {
+                            weapons[0].SetActive(true);
+                        }
+                        break;
+                    }
+                    else if (weapons[i].CompareTag("Wand"))
+                    {
+                        weapons[i].SetActive(false);
+
+                        if (i != weapons.Length - 1)
+                        {
+                            weapons[i + 1].SetActive(true);
+                        }
+                        else
+                        {
+                            weapons[0].SetActive(true);
+                        }
+                        break;
                     }
                     else
                     {
-                        weapons[0].SetActive(true);
+                        break;
                     }
-                    break;
                 }
             }
         }

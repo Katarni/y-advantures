@@ -8,10 +8,12 @@ TagManager:
   - Text
   - Enemy
   - Bullet
-  - Gun
   - Sword
   - Inventory
   - Health Display
+  - Wand
+  - slot
+  - key
   layers:
   - Default
   - TransparentFX

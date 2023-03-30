@@ -17,7 +17,6 @@ public class Slot : MonoBehaviour
         if (transform.childCount <= 0)
         {
             inventory.full_slots[i] = false;
-
         }
     }
 
