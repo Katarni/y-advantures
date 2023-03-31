@@ -10,17 +10,21 @@ public class Player : MonoBehaviour
     Rigidbody2D rb;
 
     public bool wand_unlocked = false;
+    private GameObject InventoryObject;
+    private GameObject Respawn;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        InventoryObject = GameObject.FindGameObjectWithTag("Inventory");
+        Respawn = GameObject.FindGameObjectWithTag("Respawn");
     }
 
     private void Update()
     {
         if (health <= 0)
         {
-            SceneManager.LoadScene("DeathScene");
+            
         }
         rb.velocity = new Vector2(Input.GetAxis("Horizontal") * speed, Input.GetAxis("Vertical") * speed);
     }
@@ -42,5 +46,21 @@ public class Player : MonoBehaviour
     public string GetHealth()
     {
         return health.ToString();
+    }
+
+    private void dead()
+    {
+        foreach (Transform child in InventoryObject.transform)
+        {
+            if (child.CompareTag("slot"))
+            {
+                if (child.childCount > 0)
+                {
+                    child.GetComponent<Slot>().DropItem();
+                }
+            }
+        }
+        transform.Translate(Respawn.transform.position);
+        SceneManager.LoadScene("DeathScene");
     }
 }

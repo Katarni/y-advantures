@@ -14,6 +14,7 @@ TagManager:
   - Wand
   - slot
   - key
+  - drop
   layers:
   - Default
   - TransparentFX

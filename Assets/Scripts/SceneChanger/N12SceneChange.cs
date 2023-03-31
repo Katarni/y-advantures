@@ -9,10 +9,6 @@ public class N12SceneChange : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            SceneManager.LoadScene("StoryScene");
-        }
-        if (Input.GetKeyDown(KeyCode.H))
-        {
             SceneManager.LoadScene("RuleScene");
         }
     }
