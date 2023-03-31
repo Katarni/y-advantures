@@ -10,7 +10,7 @@ public class Enemy : MonoBehaviour
     private float speed = 0.5f;
     private float damage = 3f;
     private const float SPEED = 0.5f;
-    public float radius = 0.5f;
+    private float radius = 0.7f;
 
     private GameObject Player;
     private Player player;
@@ -96,5 +96,11 @@ public class Enemy : MonoBehaviour
         }
 
         rb.velocity = new Vector2(moveX * speed, moveY * speed);
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(attackPosition.position, radius);
     }
 }

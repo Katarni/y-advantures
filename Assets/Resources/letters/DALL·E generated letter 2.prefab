@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7078199230238322596
+--- !u!1 &3424536935601909250
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,39 +8,38 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6218421625314183737}
-  - component: {fileID: 4359032290639322529}
-  - component: {fileID: 4924561165500543160}
-  - component: {fileID: 5044485271452526023}
+  - component: {fileID: 3424536935601909248}
+  - component: {fileID: 3424536935601909249}
+  - component: {fileID: 8212250774920692202}
   m_Layer: 0
-  m_Name: "DALL\xB7E generated white wand with green stone"
-  m_TagString: Wand
+  m_Name: "DALL\xB7E generated letter 2"
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6218421625314183737
+--- !u!4 &3424536935601909248
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7078199230238322596}
+  m_GameObject: {fileID: 3424536935601909250}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.16, y: -5, z: 0}
-  m_LocalScale: {x: 0.056895003, y: 0.056686033, z: 1}
+  m_LocalPosition: {x: 2.624, y: -0.522, z: 0}
+  m_LocalScale: {x: 0.029877331, y: 0.02987733, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &4359032290639322529
+--- !u!212 &3424536935601909249
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7078199230238322596}
+  m_GameObject: {fileID: 3424536935601909250}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -75,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 6cf4bae6ba0fc1541aadcda169845bf9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e0179fad75de55142896d9a50ec97f77, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -86,42 +85,16 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &4924561165500543160
+--- !u!114 &8212250774920692202
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7078199230238322596}
+  m_GameObject: {fileID: 3424536935601909250}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 69db9737204b1e3489d39a12a54354d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slot: {fileID: 7659149740728978421, guid: 68a975702883c5d428e06a33fea63bf7, type: 3}
---- !u!61 &5044485271452526023
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7078199230238322596}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 10.24, y: 10.24}
-    newSize: {x: 10.24, y: 10.24}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 10.24, y: 10.24}
-  m_EdgeRadius: 0
+  slot: {fileID: 2338046304958527998, guid: bb8c195ae79e5d44ba1a524076ccfc07, type: 3}
