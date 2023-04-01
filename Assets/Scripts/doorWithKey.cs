@@ -26,6 +26,7 @@ public class doorWithKey : MonoBehaviour
                         if (child_of_child.GetComponent<KeyUI>().keyID == DoorID)
                         {
                             gameObject.GetComponent<BoxCollider2D>().isTrigger = true;
+                            gameObject.GetComponent<SpriteRenderer>().color = new Color(0, 0, 0, 0);
                         }
                     }
                 }

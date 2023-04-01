@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    private float health = 20f;
-    private float timeBtwAttack = 0f;
-    private float startTime = 0.5f;
-    private float speed = 0.5f;
-    private float damage = 3f;
-    private const float SPEED = 0.5f;
-    private float radius = 0.7f;
+    public float health = 20f;
+    public float timeBtwAttack = 0f;
+    public float startTime = 0.5f;
+    public float speed = 0.5f;
+    public float damage = 3f;
+    public const float SPEED = 0.7f;
+    public float radius = 0.7f;
 
     private GameObject Player;
     private Player player;
