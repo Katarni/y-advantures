@@ -14,6 +14,6 @@ public class healthDisplay : MonoBehaviour
     }
     void Update()
     {
-        GetComponent<TextMeshProUGUI>().text = "Health: " + player.GetHealth();
+        GetComponent<TextMeshProUGUI>().text = "health: " + player.GetHealth();
     }
 }

@@ -1,15 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class selectedWeapon : MonoBehaviour
 {
     public GameObject[] weapons = new GameObject[2];
     private Player player;
+    public GameObject selectedWeaponText;
 
     void Start()
     {
         player = FindObjectOfType<Player>();
+        selectedWeaponText.GetComponent<TextMeshProUGUI>().text = "selected weapon: sword";
     }
 
     private void Update()
@@ -32,6 +35,7 @@ public class selectedWeapon : MonoBehaviour
                         {
                             weapons[0].SetActive(true);
                         }
+                        selectedWeaponText.GetComponent<TextMeshProUGUI>().text = "selected weapon: wand";
                         break;
                     }
                     else if (weapons[i].CompareTag("Wand"))
@@ -46,6 +50,7 @@ public class selectedWeapon : MonoBehaviour
                         {
                             weapons[0].SetActive(true);
                         }
+                        selectedWeaponText.GetComponent<TextMeshProUGUI>().text = "selected weapon: sword";
                         break;
                     }
                     else
