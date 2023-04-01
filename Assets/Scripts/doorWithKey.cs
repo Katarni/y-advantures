@@ -6,12 +6,7 @@ public class doorWithKey : MonoBehaviour
 {
     public int DoorID;
 
-    private GameObject inventory;
-
-    void Start()
-    {
-        inventory = GameObject.FindGameObjectWithTag("Inventory");
-    }
+    public GameObject inventory;
 
     void Update()
     {

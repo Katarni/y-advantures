@@ -218,6 +218,7 @@ GameObject:
   - component: {fileID: 784307650}
   - component: {fileID: 784307649}
   - component: {fileID: 784307648}
+  - component: {fileID: 784307651}
   m_Layer: 0
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -255,8 +256,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 16777215
+  m_fontColor: {r: 1, g: 1, b: 1, a: 0}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -380,6 +381,27 @@ RectTransform:
   m_AnchoredPosition: {x: 0.0842, y: -2.96}
   m_SizeDelta: {x: 12.6933, y: 2.6893}
   m_Pivot: {x: 0.5, y: 0.49999997}
+--- !u!95 &784307651
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 784307647}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9e062bb8aee6ea8498e3b8409da163e6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1004438787
 GameObject:
   m_ObjectHideFlags: 0
@@ -391,6 +413,8 @@ GameObject:
   - component: {fileID: 1004438790}
   - component: {fileID: 1004438789}
   - component: {fileID: 1004438788}
+  - component: {fileID: 1004438791}
+  - component: {fileID: 1004438792}
   m_Layer: 0
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -429,8 +453,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 16777215
+  m_fontColor: {r: 1, g: 1, b: 1, a: 0}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -554,6 +578,41 @@ RectTransform:
   m_AnchoredPosition: {x: -0.03, y: 2.01}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &1004438791
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1004438787}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5fda456489c87a44480cf1a006c00525, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1004438792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1004438787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e4d632d712e27347aba217244913043, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  titleAnim: {fileID: 1004438791}
+  textAnim: {fileID: 784307651}
 --- !u!1 &1998762098
 GameObject:
   m_ObjectHideFlags: 0
