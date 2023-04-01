@@ -24,7 +24,7 @@ public class Player : MonoBehaviour
     {
         if (health <= 0)
         {
-            
+            dead();
         }
         rb.velocity = new Vector2(Input.GetAxis("Horizontal") * speed, Input.GetAxis("Vertical") * speed);
     }
@@ -50,17 +50,8 @@ public class Player : MonoBehaviour
 
     private void dead()
     {
-        foreach (Transform child in InventoryObject.transform)
-        {
-            if (child.CompareTag("slot"))
-            {
-                if (child.childCount > 0)
-                {
-                    child.GetComponent<Slot>().DropItem();
-                }
-            }
-        }
         transform.Translate(Respawn.transform.position);
-        SceneManager.LoadScene("DeathScene");
+        this.health = 100;
+        //SceneManager.LoadScene("DeathScene");
     }
 }
