@@ -17,7 +17,7 @@ public class Enemy : MonoBehaviour
     private Rigidbody2D rb;
     public Transform attackPosition;
     public LayerMask playerLayer;
-
+    private Animator attackAnim;
     public GameObject dropIfDie;
 
     void Start()
@@ -25,6 +25,7 @@ public class Enemy : MonoBehaviour
         Player = GameObject.FindGameObjectWithTag("Player");
         player = FindObjectOfType<Player>();
         rb = GetComponent<Rigidbody2D>();
+        attackAnim = GetComponent<Animator>();
     }
 
     void Update()
@@ -45,6 +46,7 @@ public class Enemy : MonoBehaviour
             for (int i = 0; i < enemies.Length; i++)
             {
                 enemies[i].GetComponent<Player>().TakeDamage(damage);
+                attackAnim.SetTrigger("attack");
             }
             timeBtwAttack = startTime;
         }
