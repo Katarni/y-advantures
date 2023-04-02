@@ -52,16 +52,6 @@ public class Player : MonoBehaviour
 
     private void dead()
     {
-        foreach (Transform child in InventoryObject.transform)
-        {
-            if (child.CompareTag("slot"))
-            {
-                if (child.childCount > 0)
-                {
-                    child.GetComponent<Slot>().DropItem();
-                }
-            }
-        }
         transform.position = Respawn.transform.position;
         this.health = 100;
         death.SetBool("death", true);

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3085985718973359441}
   - component: {fileID: 3085985718973359442}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ork's weapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -98,9 +98,9 @@ GameObject:
   - component: {fileID: 3085985719590346413}
   - component: {fileID: 5109044442062677047}
   - component: {fileID: 7870028960074324784}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
