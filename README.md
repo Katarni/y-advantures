@@ -1,6 +1,4 @@
-# game-about-something-unity
-
-I have this game written in c++, but there is bad graphics in cmd
+# y's advantures
 
 ## Rules:
   1) Ваш персонаж - это символ 'Y'. Управлять им можно спомощью клавиш WASD или стрелочек.
